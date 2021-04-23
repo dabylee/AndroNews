@@ -29,25 +29,17 @@ import retrofit2.Response;
 
 public class MainActivity extends AppCompatActivity implements BottomNavigationView.OnNavigationItemSelectedListener {
 
-
-
-
     BottomNavigationView bttm;
-
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-
         bttm = findViewById(R.id.bnview);
         bttm.setOnNavigationItemSelectedListener(this);
 
         fragmentClick(new fragmentHome());
-
-
 
     }
 
